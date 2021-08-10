@@ -165,9 +165,8 @@ main {
     font-weight: 700;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
-    text-align: left;
     position: relative;
-    right: calc(40% - 118px);
+    display: inline-block;
 }
 
 .main-comition-table .comition-table--title {
@@ -176,9 +175,8 @@ main {
     font-weight: 700;
     line-height: 2.3rem;
     color: var(--secondary-blue);
-    text-align: left;
     position: relative;
-    right: calc(40% - 118px);
+    display: inline-block;
 }
 
 .currency-table--container, .comition-table--container {
@@ -278,4 +276,116 @@ main {
     font-weight: 300;
     color: var(--warm-black);
     line-height: 1.5rem;
+}
+
+/* intento main product detail */
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--warm-black);
+    color: var(--white);
+    padding: 20px 10px;
+}
+
+.batata {
+    width: 38px;
+    height: 24px;
+    position: absolute;
+    background-image: url('./assets/icons/batata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: calc(50% - 19px);
+    bottom: calc(100% - 12px);
+}
+
+.product-title-container {
+    width: 90%;
+    height: auto;
+    margin: 50px auto 0;
+    min-width: 230px;
+    /* max-width: 800px; */
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.product-title-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-bottom: 24px;
+}
+
+.product-title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-cards--container {
+    width: 100%;
+    height: auto;
+    min-width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-detail--card {
+    width: 100%;
+    height: auto;
+    background-color:#282623;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    align-self: center;
+    margin: 0 16px 16px 16px;
+    min-width: 230px;
+    max-width: 288px;
+    padding: 16px;
+}
+
+.product-detail--card .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+.product-detail--card .clock {
+    background-image: url('./assets/icons/clock.svg');
+}
+
+.product-detail--card .eye {
+    background-image: url('./assets/icons/eye.svg');
+}
+
+.product-detail--card .dollar-sign {
+    background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.product-detail--card .checked {
+    background-image: url('./assets/icons/check-circle.svg');
+}
+
+.product-detail--card .product--card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-detail--card .product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    /* margin-bottom: 10px; */
+    color: #808080;
 }
