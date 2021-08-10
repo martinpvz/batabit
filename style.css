@@ -165,6 +165,9 @@ main {
     font-weight: 700;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
+    text-align: left;
+    position: relative;
+    right: calc(40% - 118px);
 }
 
 .main-comition-table .comition-table--title {
@@ -173,6 +176,9 @@ main {
     font-weight: 700;
     line-height: 2.3rem;
     color: var(--secondary-blue);
+    text-align: left;
+    position: relative;
+    right: calc(40% - 118px);
 }
 
 .currency-table--container, .comition-table--container {
