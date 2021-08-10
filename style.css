@@ -154,7 +154,7 @@ main {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: 260px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -240,4 +240,36 @@ main {
     background-size: cover;
     width: 15px;
     height: 10px;
+}
+
+.currency-table--date {
+    width: max-content;
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.comition-table--date {
+    width: max-content;  /* mas content evita el desbordamiento del texto contenido */
+    height: 30px;
+    background-color: var(--soft-blue);
+    margin: 15px auto 0;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.comition-table--date p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--warm-black);
+    line-height: 1.5rem;
 }
