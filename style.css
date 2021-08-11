@@ -335,6 +335,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 16px; /* funcion experimental para dar espacio entre contenedores */
 }
 
 .product-detail--card {
@@ -344,7 +345,7 @@ main {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
     align-self: center;
-    margin: 0 16px 16px 16px;
+    /* margin-bottom: 16px; */
     min-width: 230px;
     max-width: 288px;
     padding: 16px;
@@ -415,7 +416,6 @@ main {
     width: 100%;
     height: auto;
     min-width: 320px;
-    padding-bottom: 70px;
     text-align: center;
 }
 
@@ -442,13 +442,23 @@ main {
     color: #757575;
 }
 
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll; /* poder hacer un scroll en la linea x */
+    overscroll-behavior-x: contain; /* comportamiento contain */
+    scroll-snap-type: x proximity; /* tipo proximidad, para que se vaya a la tarjeta mas cercana */
+    /* gap: 30px; */
+}
+
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center; /* centrar contenido al hacer scroll */
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 20px 8px 0;
     padding: 0 15px;
     background-color: var(--white);
     border-radius: 15px;
